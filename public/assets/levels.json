@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Nível 1 - Visão geral",
+    "emitter": { "x": 0, "z": -9, "rotationY": -1.570796 },
+    "targets": [
+      { "x": 2, "z": 8, "radius": 0.65 }
+    ],
+    "description": "Nível introdutório com um alvo único."
+  },
+  {
+    "name": "Nível 2 - Desvio básico",
+    "emitter": { "x": -4, "z": -12, "rotationY": -1.570796 },
+    "targets": [
+      { "x": -4, "z": 10, "radius": 0.65 }
+    ],
+    "description": "Nível de desvio simples, ideal para controles de mira."
+  },
+  {
+    "name": "Nível 3 - A curva suave",
+    "emitter": { "x": -2, "z": -12, "rotationY": -1.570796 },
+    "targets": [
+      { "x": 4, "z": 11, "radius": 0.65 }
+    ],
+    "description": "Foco em posicionamento de peças e direção do feixe."
+  },
+  {
+    "name": "Nível 4 - Múltiplos caminhos",
+    "emitter": { "x": 0, "z": -9, "rotationY": -1.570796 },
+    "targets": [
+      { "x": -3.5, "z": 10, "radius": 0.65 },
+      { "x": 3.5, "z": 10, "radius": 0.65 }
+    ],
+    "description": "Dois alvos exigindo decisão de rota."
+  },
+  {
+    "name": "Nível 5 - Encruzilhada",
+    "emitter": { "x": 0, "z": -12, "rotationY": -1.570796 },
+    "targets": [
+      { "x": -3, "z": 10, "radius": 0.65 },
+      { "x": 3, "z": 10, "radius": 0.65 }
+    ],
+    "description": "Nível de bifurcação com escolha de caminho."
+  },
+  {
+    "name": "Nível 6 - Velocidade e precisão",
+    "emitter": { "x": 0, "z": -12, "rotationY": -1.570796 },
+    "targets": [
+      { "x": -6, "z": 10, "radius": 0.65 },
+      { "x": 6, "z": 10, "radius": 0.65 }
+    ],
+    "description": "Exige precisão para atingir dois alvos distantes."
+  },
+  {
+    "name": "Nível 7 - Ajuste fino",
+    "emitter": { "x": 0, "z": -13, "rotationY": -1.570796 },
+    "targets": [
+      { "x": -1.4, "z": 9, "radius": 0.65 },
+      { "x": 1.4, "z": 9, "radius": 0.65 }
+    ],
+    "description": "Melhora a habilidade em ajustes pequenos de rota."
+  },
+  {
+    "name": "Nível 8 - Dualidade",
+    "emitter": { "x": 0, "z": -13, "rotationY": -1.570796 },
+    "targets": [
+      { "x": -6, "z": 4, "radius": 0.65 },
+      { "x": 6, "z": 4, "radius": 0.65 }
+    ],
+    "description": "Nível com dois alvos laterais para estratégia."
+  },
+  {
+    "name": "Nível 9 - Arena aberta",
+    "emitter": { "x": 0, "z": -13, "rotationY": -1.570796 },
+    "targets": [
+      { "x": -5, "z": 10, "radius": 0.65 },
+      { "x": 0, "z": 10, "radius": 0.65 },
+      { "x": 5, "z": 10, "radius": 0.65 }
+    ],
+    "description": "Três alvos em arena aberta, ideal para testes de foco."
+  },
+  {
+    "name": "Nível 10 - Caminhos paralelos",
+    "emitter": { "x": 0, "z": -13, "rotationY": -1.570796 },
+    "targets": [
+      { "x": -6, "z": 4, "radius": 0.65 },
+      { "x": 6, "z": 4, "radius": 0.65 }
+    ],
+    "description": "Dependendo do design, os dois feixes podem ser roteados separadamente."
+  },
+  {
+    "name": "Nível 11 - Nível de desafio",
+    "emitter": { "x": 0, "z": -13, "rotationY": -1.570796 },
+    "targets": [
+      { "x": -5, "z": 10, "radius": 0.65 },
+      { "x": 0, "z": 10, "radius": 0.65 },
+      { "x": 5, "z": 10, "radius": 0.65 }
+    ],
+    "description": "Nível final com múltiplos objetivos e maior complexidade."
+  }
+]
