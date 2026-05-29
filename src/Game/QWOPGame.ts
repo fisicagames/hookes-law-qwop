@@ -761,9 +761,9 @@ export class QWOPGame {
         };
 
         // Marcadores de recorde (topo)
-        this.bestTxt    = mkTB("best",    "🏆 0.0 m",     "#FFD700", 14);
-        this.keysTxt    = mkTB("keys",    "🔑 Chaves: 0", "#FFD700", 14);
-        this.bestVelTxt = mkTB("bestVel", "⚡ 0.0 m/s",   "#FFD700", 14);
+        this.bestTxt    = mkTB("best",    `🏆 ${this.fmt(this.bestDist, 1)} m`,  "#FFD700", 14);
+        this.keysTxt    = mkTB("keys",    "🔑 Chaves: 0",                        "#FFD700", 14);
+        this.bestVelTxt = mkTB("bestVel", `⚡ ${this.fmt(this.bestVel, 1)} m/s`, "#FFD700", 14);
         [this.bestTxt, this.keysTxt, this.bestVelTxt].forEach(tb => {
             tb.shadowColor   = "rgba(0,0,0,0.9)";
             tb.shadowBlur    = 5;
@@ -1001,7 +1001,9 @@ export class QWOPGame {
     public setLanguage(lang: number): void {
         this.currentLang = lang;
         this.sliderLabelUpdaters.forEach(fn => fn());
-        this.keysTxt.text     = lang === 0 ? `🔑 Chaves: ${this.keysCount}` : `🔑 Keys: ${this.keysCount}`;
+        this.bestTxt.text    = `🏆 ${this.fmt(this.bestDist, 1)} m`;
+        this.bestVelTxt.text = `⚡ ${this.fmt(this.bestVel, 1)} m/s`;
+        this.keysTxt.text    = lang === 0 ? `🔑 Chaves: ${this.keysCount}` : `🔑 Keys: ${this.keysCount}`;
         this.reminderTxt.text = lang === 0
             ? "💡 Clique em um 🔒 para usar a chave."
             : "💡 Click a 🔒 to use a key.";
